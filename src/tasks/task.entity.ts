@@ -6,6 +6,8 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
+import { ApiProperty } from '@nestjs/swagger';
+
 export enum TaskStatus {
   ABERTO = 'aberto',
   FAZENDO = 'fazendo',
@@ -15,12 +17,15 @@ export enum TaskStatus {
 @Entity()
 export class Task {
   @PrimaryGeneratedColumn()
+  @ApiProperty()
   id: number;
 
   @Column()
+  @ApiProperty()
   title: string;
 
   @Column()
+  @ApiProperty()
   description: string;
 
   @Column({
@@ -31,8 +36,10 @@ export class Task {
   status: TaskStatus;
 
   @CreateDateColumn()
+  @ApiProperty()
   createdAt: Date;
 
   @UpdateDateColumn()
+  @ApiProperty()
   updatedAt: Date;
 }

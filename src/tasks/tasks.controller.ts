@@ -72,6 +72,8 @@ export class TasksController {
   @Delete(':id')
   @ApiOperation({ summary: 'Deletar uma tarefa', description: 'deleta uma tarefa'})
   @ApiResponse({ status: 204, description: 'Tarefa deletada com sucesso.' })
+  @ApiResponse({ status: 404, description: '404 nao encontrado.' })
+  @ApiParam({ name: 'id', type: 'integer', description: 'ID da tarefa' })
   @HttpCode(HttpStatus.NO_CONTENT)
   async remove(@Param('id', ParseIntPipe) id: number): Promise<void> {
     return this.tasksService.remove(id);

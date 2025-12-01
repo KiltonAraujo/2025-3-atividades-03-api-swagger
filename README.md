@@ -95,16 +95,16 @@ A API possui os seguintes endpoints:
 - [X] Guardar as modificações com `git commit -m "documentado as entidades"`
 
 ### 4️⃣ Documentação do CreateTaskDto
-- [ ] Abrir o arquivo `src/tasks/dto/create-task.dto.ts`
-- [ ] Importar o decorator `@ApiProperty` do `@nestjs/swagger`
-- [ ] Adicionar `@ApiProperty()` para o campo `title`:
+- [X] Abrir o arquivo `src/tasks/dto/create-task.dto.ts`
+- [x] Importar o decorator `@ApiProperty` do `@nestjs/swagger`
+- [x] Adicionar `@ApiProperty()` para o campo `title`:
   - Adicionar description, example, minLength, maxLength
-- [ ] Adicionar `@ApiProperty()` para o campo `description`:
+- [x] Adicionar `@ApiProperty()` para o campo `description`:
   - Adicionar description, example
-- [ ] Adicionar `@ApiPropertyOptional()` para o campo `status`:
+- [x] Adicionar `@ApiPropertyOptional()` para o campo `status`:
   - Adicionar enum, description, default, example
   - Usar `@ApiPropertyOptional` pois o campo é opcional
-- [ ] Verificar a documentação do DTO no Swagger UI (schema CreateTaskDto)
+- [x] Verificar a documentação do DTO no Swagger UI (schema CreateTaskDto)
 
 ### 5️⃣ Documentação do UpdateTaskDto
 - [ ] Abrir o arquivo `src/tasks/dto/update-task.dto.ts`

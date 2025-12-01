@@ -120,7 +120,7 @@ A API possui os seguintes endpoints:
 
 ### 6️⃣ Documentação do Endpoint Raiz
 - [x] Abrir o arquivo `src/app.controller.ts`
-- [ ] Importar decorators do `@nestjs/swagger`:
+- [x] Importar decorators do `@nestjs/swagger`:
   - `@ApiTags`
   - `@ApiOperation`
   - `@ApiResponse`
@@ -131,25 +131,25 @@ A API possui os seguintes endpoints:
 - [x] Guardar as modificações com `git commit -m "documentado o endpoint raiz"`
 
 ### 7️⃣ Documentação dos Endpoints de Tarefas - Listar Todas
-- [ ] Abrir o arquivo `src/tasks/tasks.controller.ts`
-- [ ] Importar decorators do `@nestjs/swagger`:
+- [x] Abrir o arquivo `src/tasks/tasks.controller.ts`
+- [x] Importar decorators do `@nestjs/swagger`:
   - `@ApiTags`
   - `@ApiOperation`
   - `@ApiResponse`
-- [ ] Adicionar `@ApiTags('tasks')` no controller
-- [ ] Documentar o endpoint `GET /tasks` (método `findAll`):
+- [x] Adicionar `@ApiTags('tasks')` no controller
+- [x] Documentar o endpoint `GET /tasks` (método `findAll`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiResponse()` para status 200 com description e type
 
 ### 8️⃣ Documentação dos Endpoints de Tarefas - Buscar por ID
-- [ ] Documentar o endpoint `GET /tasks/:id` (método `findOne`):
+- [x] Documentar o endpoint `GET /tasks/:id` (método `findOne`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiParam()` para o parâmetro `id`
   - Adicionar `@ApiResponse()` para status 200 com description e type
   - Adicionar `@ApiResponse()` para status 404 com description
 
 ### 9️⃣ Documentação dos Endpoints de Tarefas - Criar
-- [ ] Documentar o endpoint `POST /tasks` (método `create`):
+- [x] Documentar o endpoint `POST /tasks` (método `create`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiBody()` com type CreateTaskDto
   - Adicionar `@ApiResponse()` para status 201 com description e type
